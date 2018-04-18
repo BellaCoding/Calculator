@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+    
+    <div id="container">
+        <form name="calculator">
+            <input type="text" name="sum"/>
+            <br>
+            <div class="row">
+            	<input type="button" value="1" onclick="calculator.sum.value += '1'"/>
+            	<input type="button" value="2" onclick="calculator.sum.value += '2'"/>
+            	<input type="button" value="3" onclick="calculator.sum.value += '3'"/>
+            	<input type="button" value="+" onclick="calculator.sum.value += '+'"/>
+        	</div>
+            <div class="row">
+            	<input type="button" value="4" onclick="calculator.sum.value += '4'"/>
+            	<input type="button" value="5" onclick="calculator.sum.value += '5'"/>
+            	<input type="button" value="6" onclick="calculator.sum.value += '6'"/>
+            	<input type="button" value="-" onclick="calculator.sum.value += '-'"/>
+            </div>
+            <div class="row">
+           		<input type="button" value="7" onclick="calculator.sum.value += '7'"/>
+            	<input type="button" value="8" onclick="calculator.sum.value += '8'"/>
+            	<input type="button" value="9" onclick="calculator.sum.value += '9'"/>
+            	<input type="button" value="x" onclick="calculator.sum.value += '*'"/>
+            </div>
+            <div class="row">
+            	<input type="button" value="c" onclick="calculator.sum.value = ''"/>
+            	<input type="button" value="0" onclick="calculator.sum.value += '0'"/>
+            	<input type="button" value="/" onclick="calculator.sum.value += '/'"/>
+            	<input type="button" value="=" onclick="calculator.sum.value = eval(calculator.sum.value)" class="answer"/>
+            </div>
+        </form>
+    </div>
+
+    </body>
+
+</html>
